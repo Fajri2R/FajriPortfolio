@@ -14,11 +14,12 @@ h4,
 h5,
 h6,
 a {
-    font-family: "Raleway";
+    font-family: "sans-serif";
 }
 
 .navbar {
-    background: #F97300;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
 }
 
 .nav-link,
@@ -33,7 +34,7 @@ a {
 
 .nav-link:hover {
     background: #f4f4f4;
-    color: #f97300;
+    color: #000;
 
 }
 
@@ -48,8 +49,6 @@ a {
 /*header style*/
 .header {
     position: relative;
-    background-image: url('../images/headerback.jpg');
-
     background-size: cover;
     background-position: center;
 }
@@ -60,7 +59,7 @@ a {
     min-width: 100%;
     left: 0;
     top: 0;
-    background: rgba(244, 244, 244, 0.79);
+    background: #000;
 }
 
 .description {
@@ -69,10 +68,6 @@ a {
     margin: auto;
     padding: 2em;
 
-}
-
-.description h1 {
-    color: #F97300;
 }
 
 .description p {
@@ -94,15 +89,9 @@ a {
     position: relative;
 }
 
-.about h1 {
-    color: #F97300;
-    margin: 2em;
-}
-
 .about img {
     height: 100%;
     width: 100%;
-    border-radius: 50%
 }
 
 .about span {
@@ -134,7 +123,7 @@ a {
 }
 
 .portfolio h1 {
-    color: #F97300;
+
     margin: 2em;
 }
 
@@ -155,7 +144,6 @@ a {
 }
 
 .blog h1 {
-    color: #F97300;
     margin: 2em;
 }
 
@@ -168,7 +156,7 @@ a {
     height: 12em;
 }
 
-@media and (max-width: 768px) {
+@media (max-width: 768px) {
     .team .item img {
         width: 100%;
     }
@@ -190,7 +178,7 @@ a {
 }
 
 .team h1 {
-    color: #F97300;
+
     margin: 2em;
 }
 
@@ -223,21 +211,15 @@ a {
 }
 
 .contact-form {
-    margin: 6em 0;
     position: relative;
 }
 
-.contact-form h1 {
-    padding: 2em 1px;
-    color: #F97300;
-}
 
 .contact-form .right {
     max-width: 600px;
 }
 
-.contact-form .right .btn-secondary {
-    background: #F97300;
+.contact-form .right .btn-primary {
     color: #fff;
     border: 0;
 }
@@ -245,4 +227,100 @@ a {
 .contact-form .right .form-control::placeholder {
     color: #888;
     font-size: 16px;
+}
+
+ul.social-buttons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.social-buttons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ul.social-buttons li:last-child {
+    margin-right: 0;
+}
+
+.social-btn {
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 123, 255);
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.social-btn:hover,
+.social-btn:focus {
+    background: black;
+    color: rgb(255, 255, 255);
+}
+
+.social {
+    margin-top: 25px
+}
+
+.tombolmore {
+    background: black;
+    border-color: white;
+    color: white;
+}
+
+.tombolmore:hover,
+.tombolmore:focus,
+.tombolmore:active {
+    background: white;
+    border-color: black;
+    color: black;
+}
+
+.scrollToTopBtn {
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 48px;
+    width: 48px;
+
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* keep it at the top of everything else */
+    z-index: 100;
+    /* hide with opacity */
+    opacity: 0;
+    /* also add a translate effect */
+    transform: translateY(100px);
+    /* and a transition */
+    transition: all 0.5s ease;
+}
+
+.showBtn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sosmedteam {
+    text-align: center;
+    font-size: 30px;
+    background: black;
+    color: white;
+    display: inline-block;
+}
+
+.st-btn {
+    color: white;
+}
+
+.st-btn:hover,
+.st-btn:focus {
+    background: white;
+    color: black;
 }
